@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/cardslider.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* CSS Document */
+     /* body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)),
+          url(../css/image/img/img1.jpg);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+      }
+
+      .contact-title {
+        margin-top: 100px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all 4s ease-in-out;
+      }
+
+      .contact-title h1 {
+        font-size: 32px;
+        line-height: 10px;
+      }
+
+      .contact-title h2 {
+        font-size: 16px;
+      }
+
+      form {
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+      }
+
+      .form-control {
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      input {
+        height: 45px;
+      }
+
+      form .submit {
+        background: #ff5722;
+        border-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+      }
+      form .submit:hover {
+        background-color: black;
+        cursor: pointer;
+      }*/
+
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+    </style>
+    <title>Untitled Document</title>
+  </head>
+
+  <body>
+        <div class="container">  
+                <form id="contact" action="" method="post">
+                  <h3>Quick Contact</h3>
+                  <h4>Contact us today, and get reply with in 24 hours!</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+                </form>
+               
+                
+              </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function($) {
+        "use strict";
+        $(".next").click(function() {
+          $(".carousel").carousel("next");
+          return false;
+        });
+        $(".prev").click(function() {
+          $(".carousel").carousel("prev");
+          return false;
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>
+
+<!---
+
+GSNI Limited offers bespoke services, in design, engineering and building construction through out Africa.
+Our unbeatable services enable translates clients ideas into reality, from design to enginerring and construction
+using our CNC machines.
+
+HOW We do it
+Our flexible approach begins from an abstract concept of a defined design, provision of advice and guidance 
+on the suitability of materials and finishes Compliance with relevant building regulation requirements and other
+health and safety Considerations. All aspects of a project, from developing a concept to delivery to site of the finished
+ product, or single taskin order to achieve this we work with trusted, quality assured local manufacturers and 
+ suppliers to ensure the project is exhausted exactly to our clients specifications, timely and within budget.
+ 
+ Our Services
+ We provide a quality, customer focused delivering tublar, sheet and flat metal parts to customers throughout the 
+ Africa. We boast an impressive selection of state-of-the-art laser cutters including the Adige BLM LT8, Mazak 3D 
+ and two other BLM machines, enabling a time efficient and value for money service.
+
+ The craft of metal art can not be over emphasized, as we blend technology and art in a metal sheet that 
+ tells the story all.
+
+ FAQ
+ Question1. What materials are your laser screens made from?
+ Ans: Steel, Aluminium, Stainless, Wood, Acrylic, Alucobond.
+
+ Question 2. What sizes do you have
+ Ans: Readily available sizes are 0.6mmm  x  0.6mm, 1.2mm x 1.2mm, 1.2mm x 2.4mm
+
+ Question 3. Can i have a customized art work? I have an art work that i would like to convert to metal art. 
+ can you do that for me?
+ Ans: Sure we can.
+
+ Question 4. How long does it take to get a customised decorative screen/art work delivered?
+ Ans: As long as the art work is detailed. maximum of 3 weeks. So could actually be less.
+
+ Question 5. How much does your decorative laser cut screens/art work cost?
+ Ans: Depends on the design details, size and material of your choice.
+
+ Question 6. Can you visit me or my site for a laser cut job? would like to show you what i have 
+ in mind.
+ Ans: Sure! you will be responsible for transportation fare to and from your location only.
+
+ Question 7. Where are your decorative Screens applicable?
+ Ans: Our decorative screens can be used for handrails, ballutrade, fence, gate, partitions, wall cladding, back lights, ceiling
+ pendants, customized art work, customized gift items and more.
+
+
+
+
+-->
