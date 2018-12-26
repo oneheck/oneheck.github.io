@@ -5,7 +5,6 @@ html {
 body {
   width: 100%;
   background: black;
-  
 }
 .gotopbtn {
   position: fixed;
@@ -33,13 +32,15 @@ body {
 
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
-  background-color: white;
+  background: white;
   color: red;
 }
-
+.navbar-toggler {
+  background-color: black;
+}
 .bark {
   background-color: #333;
-  margin:0 auto;
+  
 }
 
 .back {
@@ -330,8 +331,8 @@ hr {
   color: #f1f1f1;
 }
 .btw::before {
-  content:"";
-  position:absolute;
+  content: "";
+  position: absolute;
   width: 120%;
   height: 120%;
   background: red;
@@ -347,18 +348,19 @@ hr {
 }
 
 @keyframes aaa {
-  0%{
+  0% {
     top: 90%;
     left: -110%;
-  }50% {
+  }
+  50% {
     top: -30%;
     left: -110%;
-  }100%{
+  }
+  100% {
     top: -10%;
     left: -10%;
   }
 }
-
 
 /*End social button*/
 .screen a:hover {
@@ -574,18 +576,18 @@ hr {
 .shad {
   background-color: black;
   padding: 10px;
-  margin:0 auto;
+  margin: 0 auto;
   color: white;
   text-align: center;
-  
 }
 .shad h5 {
   padding-top: 30px;
-  font-family: Charm}
+  font-family: Charm;
+}
 .shad1 {
   background-color: #212529;
   padding: 10px;
-  margin:0 auto;
+  margin: 0 auto;
   color: white;
   text-align: center;
 }
@@ -638,8 +640,9 @@ hr {
 }
 
 .image-resize {
-  height: 250px;
+  height: 50vh;
   object-fit: cover;
+  overflow: hidden;
 }
 
 /*form style */
@@ -709,6 +712,21 @@ textarea:focus {
   background-color: white;
   color: white;
 }
+
+.D {
+  color: black !important;
+  text-transform: uppercase;
+}
+
+.btn2 {
+  background-color: red;
+  color: white !important;
+}
+
+.btn2:hover {
+  background-color: black;
+  color: red !important;
+}
 .heade h2 {
   color: black;
 }
@@ -751,8 +769,10 @@ textarea:focus {
   font-family: helvatica;
   cursor: pointer;
 }
-
-
+.btn1:hover {
+  background-color: white;
+  color: red !important;
+}
 
 /*End end gallery page*/
 
@@ -818,46 +838,43 @@ textarea.contact-form-text {
 }
 /*Start Qick Quote*/
 .maincontainer {
-position: relative;
-width: 250px;
-height: 320px;
-
-
+  position: relative;
+  width: 250px;
+  height: 320px;
 }
- .thecard {
-   position: relative;
-   width:100%;
-   height: 100%;
-   transform-style: preserve-3d;
-   transition: all 0.5s ease;
-   
- }
+.thecard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
 
- .thecard:hover {
-   transform: rotateY(180deg);
- }
- .thefront {
-   position: absolute;
-   width: 80%;
-   height: 100%;
-   backface-visibility: hidden;
-   background-image: url(/image/2.jpg);
-   background-size: cover;
-   
-   color: red !important;
-   text-align: center;
-   font-family: roboto;
-   border-radius: 20px;
-   font-size: 18px;
-   font-weight: bold;
-   text-transform: uppercase;
- }
- .theback {
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+.thefront {
   position: absolute;
   width: 80%;
   height: 100%;
   backface-visibility: hidden;
-  background: blue;
+  background-image: url(/image/img/img4.jpg);
+  background-size: cover;
+
+  color: red !important;
+  text-align: center;
+  font-family: roboto;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.theback {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url(/image/img/img6.jpg);
   color: #333;
   text-align: center;
   font-family: roboto;
@@ -865,9 +882,8 @@ height: 320px;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  
+  background-size: cover;
   transform: rotateY(180deg);
-
 }
 /*End Euick Quote*/
 /*footer form*/
@@ -904,7 +920,7 @@ textarea.contact-form-text1 {
 .contact-form-btn1 {
   float: left;
   border: 0;
-  background:red !important;
+  background: red !important;
   color: #fff;
   padding: 12px 50px;
   border-radius: 20px;
@@ -952,32 +968,32 @@ slider > * {
 slide:nth-child(1) {
   left: 0%;
   animation-delay: -1s;
-  background-image: url(/image/2.jpg);
+  background-image: url(/image/img/img4.jpg);
   background-size: cover;
   background-position: center;
 }
 slide:nth-child(2) {
   animation-delay: 2s;
-  background-image: url(/image/3.jpg);
+  background-image: url(/image/img/img5.jpg);
   background-size: cover;
   background-position: center;
 }
 slide:nth-child(3) {
   animation-delay: 5s;
-  background-image: url(/image/4.jpg);
+  background-image: url(/image/img/img6.jpg);
   background-size: cover;
   background-position: center;
 }
 slide:nth-child(4) {
   animation-delay: 8s;
-  background-image: url(/image/5.jpg);
+  background-image: url(/image/img/img7.jpg);
   background-size: cover;
   background-position: center;
 }
 
 slide p {
   font-family: roboto;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
